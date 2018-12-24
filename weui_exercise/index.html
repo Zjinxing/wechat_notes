@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./weui.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="button">
+        <h3>button的各种样式</h3>
+        <p>
+            1. weui-btn给元素添加按钮基本样式，weui-btn_primary按钮主要样式，绿色。<br>
+            2. weui-btn_loading给按钮添加loading样式。<br>
+            3. i.weui-loading添加loading icon。<br>
+            4. 添加weui-btn_disabled,禁用按钮 <br>
+            5. 次要按钮weui-btn_defalult <br>
+            6. 警告weui-btn_warn <br>
+        </p>
+
+        <button class="weui-btn weui-btn_primary">主要按钮：weui-btn_primary</button>
+        <button class="weui-btn weui-btn_primary weui-btn_loading">loading按钮：<i class="weui-loading"></i></button>
+        <button class="weui-btn weui-btn_primary weui-btn_disabled">禁用按钮：weui-btn_disabled</button>
+        <button class="weui-btn weui-btn_default">次要按钮</button>
+        <button class="weui-btn weui-btn_default weui-btn_loading"><i class="weui-loading"></i>次要按钮loading</button>
+        <button class="weui-btn weui-btn_default weui-btn_disabled">禁用按钮：weui-btn_disabled</button>
+        <button class="weui-btn weui-btn_warn">警告按钮</button>
+        <button class="weui-btn weui-btn_warn weui-btn_loading"><i class="weui-loading"></i>警告loading</button>
+        <button class="weui-btn weui-btn_warn weui-btn_disabled">警告禁用</button>
+
+        <!--镂空按钮-->
+        <div class="button-sp-area">
+            <p>
+                <b>镂空按钮</b> <br>
+                1. weui-btn_plain-default 镂空按钮基本样式 <br>
+                2. weui-btn_plain-disabled 镂空按钮禁用样式 <br>
+                3. weui-btn_mini 迷你按钮样式
+            </p>
+            <button class="weui-btn weui-btn_plain-default">镂空按钮</button>
+            <button class="weui-btn weui-btn_plain-default weui-btn_plain-disabled">镂空按钮禁用</button>
+            <button class="weui-btn weui-btn_plain-primary">镂空按钮主要</button>
+            <button class="weui-btn weui-btn_plain-primary weui-btn_plain-disabled">镂空按钮主要禁用</button>
+            <button class="weui-btn weui-btn_mini weui-btn_primary">小按钮</button>
+            <button class="weui-btn weui-btn_mini weui-btn_default">小按钮</button>
+            <button class="weui-btn weui-btn_mini weui-btn_warn">小按钮</button>
+        </div>
+        <div class="input">
+            <h3>表单输入的各种样式</h3>
+
+            <h4>单选列表选项</h4>
+            <p>
+                结构: <br>
+                外层div加类名weui-cells.weui-cells_radio <br>
+                内层label标签加类名weui-cell.weui-check__label <br>
+                label内层两个div，第一个div类名weui-cell__bd, 第二个div类名weui-cell__ft
+                第二个地址内放input标签，input类名weui-check，input标签后跟span标签，添加check icon，span类名weui-icon-checked。
+
+            </p>
+            <div class="weui-cells weui-cells_radio">
+                <label class="weui-cell weui-check__label" for="x11">
+                    <div class="weui-cell__bd">
+                        <p>cell standard</p>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <input type="radio" class="weui-check" name="radio1" id="x11">
+                        <span class="weui-icon-checked"></span>
+                    </div>
+                </label>
+                <label for="x12" class="weui-cell weui-check__label">
+                    <div class="weui-cell__bd">
+                        <p>cell standard</p>
+                    </div>
+                    <div class="weui-cell__ft">
+                        <input type="radio" class="weui-check" name="radio1" id="x12" checked>
+                        <span class="weui-icon-checked"></span>
+                    </div>
+                </label>
+            </div>
+            <h4>复选列表选项</h4>
+            <p>
+                1. 外层class='weui-cells weui-cells_checkbox' <br>
+                2. 内层放label class='weui-cells weui-check__label' <br>
+                3. label 内层两个元素，第一个元素 class='weui-cell__hd',第一个元素内层包含input标签和图标
+                input类名class='weui-check',图标class='weui-icon-checked';label标签内第二个元素 class='weui-cell__bd',里边存放checkbox对应的文字
+            </p>
+            <div class="weui-cells weui-cells_checkbox">
+                <label for="s11" class="weui-cell weui-check__label">
+                    <div class="weui-cell__hd">
+                        <input type="checkbox" class="weui-check" name="checkbox1" checked id="s11">
+                        <i class="weui-icon-checked"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>standard is dealt for u.</p>
+                    </div>
+                </label>
+                <label for="s12" class="weui-cell weui-check__label">
+                    <div class="weui-cell__hd">
+                        <input type="checkbox" class="weui-check" name="checkbox1" id="s12">
+                        <i class="weui-icon-checked"></i>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <p>standard is dealicient for u.</p>
+                    </div>
+                </label>
+            </div>
+            <h4>form表单</h4>
+            <p>
+
+            </p>
+            <div class="weui-cells weui-cells_form">
+                <div class="weui-cell">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">qq</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input type="number" class="weui-input" pattern="[0-9]*" placeholder="请输入QQ号">
+                    </div>
+                </div>
+                <div class="weui-cell weui-cell_vcode">
+                    <div class="weui-cell__hd">
+                        <label class="weui-label">手机号</label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input type="tel" class="weui-input" placeholder="请输入手机号">
+                    </div>
+                    <div class="weui-cell__ft">
+                        <button class="weui-vcode-btn">获取验证码</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
